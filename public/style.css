@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #1E1E1E;
+    padding: 10px;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+    background-color: #171717;
+    border-radius: 5px;;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 3fr 3fr 5fr;
+    height: 100%;
+}
+
+#alist,
+#slist,
+#download {
+    position: relative;
+}
+
+#alist::after,
+#slist::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: .5rem;
+    right: -1rem;
+    width: 1px;
+    height: calc(100% - 1rem);
+    background-color: #404040;
+}
+
+.album {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #171717;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.album img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    color: #FFFFFF;
+}
+
+.album .text {
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    width: calc(100% - 80px);
+    color: #FFFFFF;
+}
+
+.album .artist {
+    font-size: 10pt;
+    color: #999999;
+}
+
+.album button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #000000AA;
+    color: #AA0000;
+    font-size: 20pt;
+    font-weight: 800;
+    opacity: 0;
+    transition: opacity .5s;
+    cursor: pointer;
+}
+
+.album:hover button {
+    opacity: 1;
+}
+
+.tabs {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.tabs::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1rem;
+    left: .5rem;
+    width: calc(100% - 1rem);
+    height: 1px;
+    background-color: #404040;
+}
+
+.tabs button {
+    border: none;
+    background: #404040;
+    border-radius: 12px;
+    width: 125px;
+    height: 40px;
+    color: #FFFFFF;
+}
+
+.tabs #stab {
+    background-color: #262626;
+}
+
+.tabs.singled #atab {
+    background-color: #262626;
+}
+
+.tabs.singled #stab {
+    background-color: #404040;
+}
+
+.form {
+    position: relative;
+    display: grid; 
+    grid-template-columns: 35px 35px 35px 1fr 75px 75px; 
+    grid-template-rows: repeat(5, 35px);  
+    gap: 10px 10px; 
+    grid-template-areas: 
+        "query query query query import search"
+        "cover cover cover url url url"
+        "cover cover cover title title title"
+        "cover cover cover artist artist artist"
+        "id id id id add add"; 
+    margin-bottom: 2rem;
+}
+
+.form::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1rem;
+    left: .5rem;
+    width: calc(100% - 1rem);
+    height: 1px;
+    background-color: #404040;
+}
+
+.form #query { grid-area: query; }
+.form #importbtn { grid-area: import; }
+.form #searchbtn { grid-area: search; }
+.form #cover {
+    grid-area: cover;
+    width: 100%;
+    height: 100%;
+}
+.form #urlipt { grid-area: url; }
+.form #titleipt { grid-area: title; }
+.form #artistipt { grid-area: artist; }
+.form #idipt { grid-area: id; }
+.form #addbtn { grid-area: add; }
+
+.threads p {
+    color: #FFFFFF;
+}
+
+#downloadbtn {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: calc(100% - 1rem);
+    height: 35px;
+    background-color: #404040;
+}

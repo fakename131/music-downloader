@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Downloader</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="grid">
+        <div id="alist">
+            <div id="a123456" class="album">
+                <img src="https://images.genius.com/4cc743e58f5e31d8ff3dc548c2c9e866.1000x1000x1.jpg"></img>
+                <div class="text">
+                    <p class="title">The Melodic Blue (Deluxe)</p>
+                    <p class="artist">Baby Keem</p>
+                </div>
+                <button>Remove</button>
+            </div>
+            <div id="a123457" class="album">
+                <img src="https://images.genius.com/07a3deb92bfe7c78f95add89edc0e5ed.1000x1000x1.png"></img>
+                <div class="text">
+                    <p class="title">Man on the Moon III: The Chosen</p>
+                    <p class="artist">Kid Cudi</p>
+                </div>
+                <button>Remove</button>
+            </div>
+        </div>
+        <div id="slist">
+            <div id="a123455" class="album">
+                <img src="https://images.genius.com/c7db7f8aa2fb7c42e2d0ab7ccd9e9593.1000x1000x1.png"></img>
+                <div class="text">
+                    <p class="title">HIGHEST IN THE ROOM</p>
+                    <p class="artist">Travis Scott</p>
+                </div>
+                <button>Remove</button>
+            </div>
+        </div>
+        <div id="download">
+            <div class="tabs">
+                <button id="atab">Album</button>
+                <button id="stab">Single</button>
+            </div>
+            <div class="form">
+                <input type="text" id="query">
+                <button id="importbtn">Import</button>
+                <button id="searchbtn">Search</button>
+                <img id="cover" src="https://images.genius.com/84ed4dcc31b23d53ab686af7b3963ca8.888x888x1.png" alt="image not found">
+                <input type="text" id="urlipt" placeholder="https://images.genius.com/84ed4dcc31b23d53ab686af7b3963ca8.888x888x1.png">
+                <input type="text" id="geniusurl" hidden="true">
+                <input type="text" id="titleipt" placeholder="DS2">
+                <input type="text" id="artistipt" placeholder="Future">
+                <input type="text"  id="idipt" disabled>
+                <button id="addbtn">Add</button>
+            </div>
+            <div class="threads">
+                <p id="state0">idle</p>
+                <p id="state1">idle</p>
+                <p id="state2">idle</p>
+                <p id="state3">idle</p>
+                <p id="state4">idle</p>
+                <p id="state5">idle</p>
+                <p id="state6">idle</p>
+                <p id="state7">idle</p>
+                <p id="state8">idle</p>
+                <p id="state9">idle</p>
+                <p id="statea">idle</p>
+                <p id="stateb">idle</p>
+                <p id="statec">idle</p>
+                <p id="stated">idle</p>
+                <p id="statee">idle</p>
+                <p id="statef">idle</p>
+            </div>
+            <button id="downloadbtn">Download</button>
+            <p id="state1"></p>
+        </div>
+    </div>
+</body>
+
+</html>
