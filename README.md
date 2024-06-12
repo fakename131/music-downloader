@@ -1,5 +1,7 @@
 # music-downloader
 Hackiest music downloader you've ever seen
+Genius for albums
+Yt for files
 
 # Dependencies
 yt-search (npm)
@@ -26,6 +28,14 @@ $ `cd FOLDER_WHERE_YOU_WANT_TO_STORE_MUSIC`
 \# `chmod +x download.sh`
 
 $ `./download.sh`
+
+# Cache
+
+The albums I've downloaded
+I've manually changed some during download but didnt change the cache so its not 100% accurate
+Known issues
+- In a Minute by Lil Baby actually plays Minute
+- Tunnel Vision by Kodak Black plays the instrumental
 
 # Manual Entries
 
